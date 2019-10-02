@@ -54,10 +54,10 @@ build-stamp:
 
 # Build architecture-dependent files here.
 binary-arch: install
-	dh_strip -a
 	dh_compress -a
 	dh_installdeb
 	dh_gencontrol
 	dh_builddeb
+	# dh_strip -a
 
 binary: binary-indep binary-arch
